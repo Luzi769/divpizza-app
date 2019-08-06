@@ -7,6 +7,18 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  catalogo:Array<Object> = []
+  
+
+  ionViewDidEnter() {
+    console.log("EXECUTOU O VIEW DID ENTER ")
+    this.catalogo.push({
+      nome: 'queijo maluco gourmet',
+      descricao: 'queijo, catupiry, batata',
+      preco: 'R$72'
+
+  })
+
+}
 
 }
